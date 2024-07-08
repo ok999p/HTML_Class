@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap');
+
+
+body,
+html {
+  background-color: rgb(66, 0, 66);
+  font-family: 'Charm', cursive;
+  margin: 0;
+  padding: 0;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 20px;
+  text-align: center;
+}
+
+.sub-container {
+  box-shadow: #ffffff 0 0 100px;
+  margin-top: 0;
+  background-color: white;
+  border-radius: 35px; /* เพิ่มเส้นนี้ */
+
+}
+
+h1 {
+  font-size: 50px;
+  margin: 0;
+}
+
+.container3 {
+  display: flex;
+  flex-direction: column;
+  /* จัดให้อยู่ในแนวตั้ง */
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+}
+
+.image {
+  width: 400px;
+  height: auto;
+}
+
+.content {
+  width: fit-content;
+}
+
+
+
+p {
+  font-size: 25px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-container p {
+  font-size: 25px;
+  margin: 5px 0;
+}
+
+.footer-container a {
+  color: #FFD700;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer-container a:hover {
+  text-decoration: underline;
+}
+
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.shine {
+  font-size: 4em;
+  font-weight: 900;
+  color: rgba(255, 215, 0, 0.5);
+  /* สีทองแบบโปร่งใส */
+  background: #222 -webkit-gradient(linear,
+      left top,
+      right top,
+      from(#222),
+      to(#222),
+      color-stop(0.5, #FFD700)
+      /* สีทอง */
+    ) 0 0 no-repeat;
+  background-image: -webkit-linear-gradient(-40deg,
+      transparent 0%,
+      transparent 40%,
+      #FFD700 60%,
+      /* สีทอง */
+      transparent 70%,
+      transparent 100%);
+  -webkit-background-clip: text;
+  -webkit-background-size: 200%;
+  -webkit-animation: shineAnimation 5s infinite;
+}
+
+@-webkit-keyframes shineAnimation {
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}
